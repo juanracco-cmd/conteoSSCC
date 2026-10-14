@@ -1,0 +1,16 @@
+CONTEO DE INVENTARIO - app offline para celular
+================================================
+
+Contenido: index.html (la app), sw.js (modo sin conexión), manifest.webmanifest e íconos.
+Subí la carpeta completa, tal cual, a cualquier hosting estático con HTTPS.
+La app solo se descarga de ahí: los datos de SAP y los conteos NO se envían a ningún servidor,
+quedan guardados en el navegador de cada dispositivo.
+
+Uso
+1. Notebook: abrí la app > Archivo > Cargar Excel de SAP (LX03). Revisá columnas > Usar estos datos.
+2. Pasar al celular: Archivo > Descargar copia, y abrila en el celular con Archivo > Importar copia
+   (o cargá directamente el mismo Excel desde el celular).
+3. Celular: contá por ubicación. Con diferencias, cargá el código de verificación (7 dígitos) o el SSCC (18).
+4. Volver: Archivo > Descargar Excel (o Compartir) y llevalo a la notebook.
+
+Para actualizar la app: reemplazá los archivos y subí el número de CACHE en sw.js (conteo-v1 > conteo-v2).
